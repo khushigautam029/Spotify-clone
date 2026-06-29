@@ -1,0 +1,123 @@
+.player {
+  background-color: #181818;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  height: 80px;
+  position: sticky;
+  bottom: 0;
+  z-index: 10;
+  border-top: 1px solid #282828;
+}
+
+/* Left Section */
+.player__left {
+  display: flex;
+  align-items: center;
+  flex: 0.3;
+}
+
+.player__albumArt {
+  height: 60px;
+  width: 60px;
+  object-fit: cover;
+  margin-right: 15px;
+  border-radius: 5px;
+}
+
+.player__songInfo h4 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.player__songInfo p {
+  margin: 2px 0 0;
+  font-size: 12px;
+  color: #b3b3b3;
+}
+
+/* Center Controls */
+.player__center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0.4;
+}
+
+.player__icon {
+  margin: 0 10px;
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+}
+
+.player__icon.play {
+  font-size: 28px;
+}
+
+/* Right Section: Progress Bar */
+.player__right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 0.3;
+}
+
+.player__progressBar {
+  height: 4px;
+  background-color: #535353;
+  width: 100%;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.player__progress {
+  height: 100%;
+  background-color: #1db954;
+  width: 30%;
+}
+
+.player {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #181818;
+  color: white;
+  flex-wrap: wrap; /* important for smaller screens */
+}
+
+.player__left,
+.player__center,
+.player__right {
+  display: flex;
+  align-items: center;
+  margin: 5px;
+}
+
+/* For small screens */
+@media (max-width: 768px) {
+  .player {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .player__left,
+  .player__center,
+  .player__right {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .player__songInfo h4,
+  .player__songInfo p {
+    font-size: 14px;
+  }
+
+  .player__progressBar {
+    width: 90%;
+  }
+}

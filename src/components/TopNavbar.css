@@ -1,0 +1,113 @@
+.top-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  background-color: #121212;
+  color: white;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-left .icon {
+  font-size: 20px;
+  padding: 8px;
+  background-color: #1a1a1a;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #2a2a2a;
+  padding: 8px 12px;
+  border-radius: 20px;
+}
+
+.search-bar input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  margin-left: 8px;
+}
+
+.search-icon {
+  color: gray;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.premium-btn {
+  background-color: white;
+  color: black;
+  font-weight: 600;
+  border: none;
+  border-radius: 20px;
+  padding: 6px 15px;
+  cursor: pointer;
+}
+
+.user-circle {
+  background-color: #b49bc8;
+  color: black;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 10px;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.player {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #181818;
+  color: white;
+  flex-wrap: wrap; /* important for smaller screens */
+}
+
+.player__left,
+.player__center,
+.player__right {
+  display: flex;
+  align-items: center;
+  margin: 5px;
+}
+
+/* For small screens */
+@media (max-width: 768px) {
+  .player {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .player__left,
+  .player__center,
+  .player__right {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .player__songInfo h4,
+  .player__songInfo p {
+    font-size: 14px;
+  }
+
+  .player__progressBar {
+    width: 90%;
+  }
+}

@@ -1,0 +1,74 @@
+.sidebar {
+  width: 260px;
+  background-color: #000;
+  color: #b3b3b3;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Arial', sans-serif;
+}
+
+.sidebar__logo {
+  width: 140px;
+  margin-bottom: 30px;
+}
+
+.sidebar__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-bottom: 25px;
+}
+
+.sidebar__navItem {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #b3b3b3;
+  font-size: 15px;
+  transition: color 0.2s ease;
+}
+
+.sidebar__navItem:hover {
+  color: #fff;
+}
+
+.sidebar__icon {
+  font-size: 18px;
+  margin-right: 16px;
+}
+
+.sidebar__icon.heart {
+  color: #1db954;
+}
+
+.sidebar__divider {
+  border: none;
+  height: 1px;
+  background-color: #282828;
+  margin: 10px 0;
+}
+
+.sidebar__playlists {
+  flex-grow: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-right: 5px;
+}
+
+.sidebar__playlistItem {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #b3b3b3;
+  font-size: 14px;
+  transition: color 0.2s ease;
+}
+
+.sidebar__playlistItem:hover {
+  color: white;
+}
